@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: #353740;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid grey;
+  border-top: 3px solid #6AAA64;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  align-items: center;
+  padding: 10px 0px;
+  padding-left: 13%;
+  width: 70%;
+  font-weight: bold;
+}
+
+#board {
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tile {
+  border: 1px solid grey;
+  width: 60px;
+  height: 60px;
+  margin: 1px;
+  font-size: 36px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.button {
+  padding: 15px;
+  margin: 30px;
+  background-color: #6AAA64;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.correct {
+  background-color: #6AAA64;
+  color: white;
+  border-color: white;
+}
+
+.present {
+  background-color: #C9B458;
+  color: white;
+  border-color: white;
+}
+
+.absent {
+  background-color: #787C7E;
+  color: white;
+  border-color: white;
+}
+
+.hint {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #C9B458;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.lost {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.won {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #6AAA64;
+  color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+}
+
+#left-column {
+  flex: 1;
+}
+
+#right-column {
+  flex: 1;
+  background-color: #f0f0f0;
+}
+
+.invisible {
+  display: none;
+}

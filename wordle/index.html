@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Wordle</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <script src="./wordle.js"></script>
+    <header>
+      <span id="title">
+        Wordle
+      </span>
+      
+      <span class="logo" onclick="toggleDarkMode()">&#9681;</span>
+      <span class="logo" onclick="toggleHint()">&#63;</span>
+      <span class="logo" onclick="toggleInstructions()">&#9432;</span>
+    </header>
+
+    <div id="container">
+      <div id="left-column">
+        <div>
+          <div id="board"></div>
+          <div class="button-wrapper">
+            <button class="button" onclick="refreshPage()">
+              Start Over
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="right-column" class="invisible">
+        <div>
+          <strong>How to Play</strong>
+          <ul>
+            <li>Start typing. The letters will appear in the boxes</li>
+            <li>Remove letters with Backspace</li>
+            <li>Hit Enter/Return to submit an answer</li>
+            <li>Letters with green background are in the right spot</li>
+            <li>Letters with yellow background exist in the word, but are in the wrong spots</li>
+            <li>Letters with grey background do not exist in the word</li>
+            <li>If you need a hint, click the &#63 icon</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
